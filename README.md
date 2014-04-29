@@ -18,26 +18,25 @@ There are several simple steps:
 4. Instead, you run via the controller. Specifically, call `CoronaViewerController`'s `run` selector.
 5. Ensure that launch url's are handled correctly by adding the following to your implementation of the  `UIApplicationDelegate`:
 
-```
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url sourceApplication:(NSString *)source annotation:(id)annotation
-{
-	return [CoronaViewerController handleOpenURL:url];
-}
-```
+    ```
+    - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url sourceApplication:(NSString *)source annotation:(id)annotation
+    {
+    	return [CoronaViewerController handleOpenURL:url];
+    }
+    ```
+6. Modify your `Info.plist` so that Dropbox can interact with CoronaViewer properly:
 
-`6`. Modify your `Info.plist` so that Dropbox can interact with CoronaViewer properly:
-
-```
-<key>CFBundleURLTypes</key>
-<array>
-	<dict>
-		<key>CFBundleURLSchemes</key>
-		<array>
-			<string>db-l1q0pln8qsi8qyp</string>
-		</array>
-	</dict>
-</array>
-```
+    ```
+    <key>CFBundleURLTypes</key>
+    <array>
+    	<dict>
+    		<key>CFBundleURLSchemes</key>
+    		<array>
+    			<string>db-l1q0pln8qsi8qyp</string>
+    		</array>
+    	</dict>
+    </array>
+    ```
 
 
 ### Dropbox
@@ -78,6 +77,6 @@ You can also build this app for the Xcode Simulator instead of for your device.
 
 CoronaViewer is available to the following subscriptions/tiers:
 
-* __Corona SDK (Pro)__
-* __Corona Enterprise__
-* __CoronaCards__ uses a slightly different workflow. [Learn more](https://github.com/coronacards/CoronaViewer)
+* __Corona SDK (Pro)__ uses a slightly different workflow. [Learn more](https://github.com/coronalabs/CoronaViewer)
+* __Corona Enterprise__ uses a slightly different workflow. [Learn more](https://github.com/coronalabs/CoronaViewer)
+* __CoronaCards__
