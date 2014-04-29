@@ -6,9 +6,15 @@ In this workflow, your native app does not have to be recompiled/relinked/reinst
 
 NOTE: [Corona SDK/Enterprise](http://coronalabs.com/products/corona-sdk/) developers should go [here](https://github.com/coronalabs/CoronaViewer).
 
-## Project setup
+## Getting Started
 
-## Code Integration
+### Installation
+
+The `CoronaViewer.framework` should be installed so that its path is:
+
+`/Users/Shared/CoronaLabs/ios/CoronaViewer.framework`
+
+### Code Integration
 
 There are several simple steps:
 
