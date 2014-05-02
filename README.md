@@ -72,6 +72,13 @@ This enables the app to synchronize with your Corona project files (i.e. files t
 You can also build this app for the Xcode Simulator instead of for your device.
 
 
+## Limitations
+
+### File Updates
+
+Files are updated based on modification time. To get the device to update the file, you must make sure the modification time is newer.
+
+
 ## Availability
 
 ### Supported Platforms
@@ -86,3 +93,4 @@ CoronaViewer is available to the following subscriptions/tiers:
 * __Corona SDK (Pro)__ uses a slightly different workflow. [Learn more](https://github.com/coronalabs/CoronaViewer)
 * __Corona Enterprise__ uses a slightly different workflow. [Learn more](https://github.com/coronalabs/CoronaViewer)
 * __CoronaCards__
+
