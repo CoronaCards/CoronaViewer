@@ -10,15 +10,15 @@ NOTE: [Corona SDK/Enterprise](http://coronalabs.com/products/corona-sdk/) develo
 
 ### Installation
 
-The `CoronaViewer.framework` should be installed so that its path is:
+The `CoronaCards.framework` should be installed so that its path is:
 
-`/Users/Shared/CoronaLabs/ios/CoronaViewer.framework`
+`/Users/Shared/CoronaLabs/ios/CoronaCards.framework`
 
 ### Code Integration
 
 There are several simple steps:
 
-1. Add `CoronaViewer.framework` to your Xcode project.
+1. Add `CoronaCards.framework` to your Xcode project.
 2. Use `CoronaViewerController` instead of `CoronaViewController`. The former is a drop-in replacement for the latter. Note that the two differ in spelling just slightly — there is an '<strong>er</strong>' in 'CoronaView<strong>er</strong>Controller'.
 3. Disable your call to the `run` or `runWithPath:parameters:` selector of your `CoronaView` instance.
 4. Instead, you run via the controller. Specifically, call `CoronaViewerController`'s `run` selector.
